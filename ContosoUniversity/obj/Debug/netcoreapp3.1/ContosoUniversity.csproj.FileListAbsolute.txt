@@ -343,3 +343,8 @@ C:\Users\t.yuji\source\repos\ContosoDocker\ContosoDocker\ContosoUniversity\obj\D
 C:\Users\t.yuji\source\repos\ContosoDocker\ContosoDocker\ContosoUniversity\obj\Debug\netcoreapp3.1\Razor\Views\Students\Details.cshtml.g.cs
 C:\Users\t.yuji\source\repos\ContosoDocker\ContosoDocker\ContosoUniversity\obj\Debug\netcoreapp3.1\Razor\Views\Students\Edit.cshtml.g.cs
 C:\Users\t.yuji\source\repos\ContosoDocker\ContosoDocker\ContosoUniversity\obj\Debug\netcoreapp3.1\Razor\Views\Students\Index.cshtml.g.cs
+C:\Users\takah\source\repos\ContosoDocker\ContosoDocker\ContosoUniversity\obj\Debug\netcoreapp3.1\Razor\Views\Students\Create.cshtml.g.cs
+C:\Users\takah\source\repos\ContosoDocker\ContosoDocker\ContosoUniversity\obj\Debug\netcoreapp3.1\Razor\Views\Students\Delete.cshtml.g.cs
+C:\Users\takah\source\repos\ContosoDocker\ContosoDocker\ContosoUniversity\obj\Debug\netcoreapp3.1\Razor\Views\Students\Details.cshtml.g.cs
+C:\Users\takah\source\repos\ContosoDocker\ContosoDocker\ContosoUniversity\obj\Debug\netcoreapp3.1\Razor\Views\Students\Edit.cshtml.g.cs
+C:\Users\takah\source\repos\ContosoDocker\ContosoDocker\ContosoUniversity\obj\Debug\netcoreapp3.1\Razor\Views\Students\Index.cshtml.g.cs
