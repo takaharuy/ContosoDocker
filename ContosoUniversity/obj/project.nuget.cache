@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hv8j8OUC0se92jjDdZ8ilbD0uyXkmT2JmuXHwEgv3J5VN5y7pZesqEvxOdVQ2KPhm+DZMLSGU4ze8hh4gVF7Xg==",
+  "dgSpecHash": "WevCeNeUdS4ENpKfihQqs6toXlTjVXCxzW70/ous1cv48nKDCNKiqLBfIq6RchII+nmHC9hxkjtoe4oi8mx/cw==",
   "success": true,
   "projectFilePath": "C:\\Users\\t.yuji\\source\\repos\\ContosoDocker\\ContosoDocker\\ContosoUniversity\\ContosoUniversity.csproj",
   "expectedPackageFiles": [
@@ -49,6 +49,7 @@
     "C:\\Users\\t.yuji\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.5.0\\microsoft.identitymodel.tokens.5.5.0.nupkg.sha512",
     "C:\\Users\\t.yuji\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Users\\t.yuji\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\t.yuji\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Users\\t.yuji\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\3.1.4\\microsoft.visualstudio.web.codegeneration.3.1.4.nupkg.sha512",
     "C:\\Users\\t.yuji\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.contracts\\3.1.4\\microsoft.visualstudio.web.codegeneration.contracts.3.1.4.nupkg.sha512",
     "C:\\Users\\t.yuji\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\3.1.4\\microsoft.visualstudio.web.codegeneration.core.3.1.4.nupkg.sha512",
