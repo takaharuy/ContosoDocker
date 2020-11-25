@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ContosoUniversity.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace ContosoUniversity
 {
@@ -25,6 +26,7 @@ namespace ContosoUniversity
             using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
+                
                 try
                 {
                     var context = services.GetRequiredService<SchoolContext>();
