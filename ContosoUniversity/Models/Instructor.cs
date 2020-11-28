@@ -39,5 +39,4 @@ namespace ContosoUniversity.Models
         public ICollection<CourseAssignment> CourseAssignments { get; set; }
         public OfficeAssignment OfficeAssignment { get; set; }
     }
-    }
 }
