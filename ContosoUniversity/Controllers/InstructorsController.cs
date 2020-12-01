@@ -76,6 +76,9 @@ namespace ContosoUniversity.Controllers
         // GET: Instructors/Create
         public IActionResult Create()
         {
+            var Instructor = new Instructor();
+            Instructor.CourseAssignments = new List<CourseAssignment>();
+            PopulateAssignedCourseData(Instructor);
             return View();
         }
 
@@ -84,14 +87,25 @@ namespace ContosoUniversity.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,LastName,FirstMidName,HireDate")] Instructor instructor)
+        public async Task<IActionResult> Create(
+            [Bind("FirstMidName,HireDate,LastName,OfficeAssignment")] Instructor instructor, string[] selectedCourses)
         {
+            if(selectedCourses != null)
+            {
+                instructor.CourseAssignments = new List<CourseAssignment>();
+                foreach(var course in selectedCourses)
+                {
+                    var courseToAdd = new CourseAssignment { InstructorId = instructor.Id, CourseId = int.Parse(course) };
+                    instructor.CourseAssignments.Add(courseToAdd);
+                }
+            }
             if (ModelState.IsValid)
             {
                 _context.Add(instructor);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            PopulateAssignedCourseData(instructor);
             return View(instructor);
         }
 
