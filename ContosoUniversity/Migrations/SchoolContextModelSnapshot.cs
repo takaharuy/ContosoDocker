@@ -73,6 +73,11 @@ namespace ContosoUniversity.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
 
@@ -200,7 +205,7 @@ namespace ContosoUniversity.Migrations
 
             modelBuilder.Entity("ContosoUniversity.Models.Department", b =>
                 {
-                    b.HasOne("ContosoUniversity.Models.Instructor", "Administratir")
+                    b.HasOne("ContosoUniversity.Models.Instructor", "Administrator")
                         .WithMany()
                         .HasForeignKey("InstructorId");
                 });

@@ -122,7 +122,7 @@ namespace ContosoUniversity.Controllers
 
         private void PopulateDepartmentsDropDownList(object selectedDepartment = null)
         {
-            var departmentsQuery = from d in _context.Depaerments
+            var departmentsQuery = from d in _context.Departments
                                    orderby d.Name
                                    select d;
             ViewBag.DepartmentId = new SelectList(

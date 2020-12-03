@@ -64,7 +64,7 @@ namespace ContosoUniversity.Data
             };
             foreach(Department d in departments)
             {
-                context.Depaerments.Add(d);
+                context.Departments.Add(d);
             }
             context.SaveChanges();
 

@@ -221,7 +221,7 @@ namespace ContosoUniversity.Controllers
                 .Include(i => i.CourseAssignments)
                 .SingleAsync(i => i.Id == id);
 
-            var departments = await _context.Depaerments
+            var departments = await _context.Departments
                 .Where(d => d.InstructorId == id)
                 .ToListAsync();
 

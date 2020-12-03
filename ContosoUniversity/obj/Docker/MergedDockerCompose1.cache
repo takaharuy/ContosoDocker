@@ -1,0 +1,28 @@
+services:
+  contosodb:
+    container_name: ContosoSqlDb
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: pass%w0rd
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+    - published: 1433
+      target: 1433
+    restart: always
+  contosouniversity:
+    build:
+      context: C:\Users\t.yuji\source\repos\ContosoDocker\ContosoDocker\ContosoUniversity
+      dockerfile: Dockerfile
+    depends_on:
+      contosodb:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:5000
+    image: contosouniversity
+    ports:
+    - published: 8801
+      target: 5000
+    volumes:
+    - C:\Users\t.yuji\AppData\Roaming\ASP.NET\Http:/root/.aspnet/http:ro
+version: '3.4'
