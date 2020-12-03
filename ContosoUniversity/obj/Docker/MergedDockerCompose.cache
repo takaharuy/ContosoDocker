@@ -11,7 +11,7 @@ services:
     restart: always
   contosouniversity:
     build:
-      context: C:\Users\takah\source\repos\ContosoDocker\ContosoDocker\ContosoUniversity
+      context: C:\Users\t.yuji\source\repos\ContosoDocker\ContosoDocker\ContosoUniversity
       dockerfile: Dockerfile
     depends_on:
       contosodb:
@@ -24,5 +24,5 @@ services:
     - published: 8801
       target: 5000
     volumes:
-    - C:\Users\takah\AppData\Roaming\ASP.NET\Http:/root/.aspnet/http:ro
+    - C:\Users\t.yuji\AppData\Roaming\ASP.NET\Http:/root/.aspnet/http:ro
 version: '3.4'
